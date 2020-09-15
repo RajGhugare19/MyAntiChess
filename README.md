@@ -30,7 +30,7 @@ Now you can run the mac executable which will display a the starting position on
 
 ### Board Representation:
 
-The board is primariliy a C structure. It uses [bitboard representation](https://www.chessprogramming.org/Bitboards) to take advantage of the 64 bit processor and generate moves as much faster as compared to normal loops. Each piece type has its own bitboard. [De Bruijn bitscan](https://www.chessprogramming.org/BitScan) is used to find the lowest and the higest bit position speedily. Each board position is encrypted using a 64 bit hash-key which is found using XOR,randomly generated piece and position keys. So given a position, a unique hashkey is generated which helps to find repetitions.
+The board is primariliy a C structure. It uses [bitboard representation](https://www.chessprogramming.org/Bitboards) to take advantage of the 64 bit processor and generate moves much faster as compared to normal loops. Each piece type has its own bitboard. [De Bruijn bitscan](https://www.chessprogramming.org/BitScan) is used to find the lowest and the higest bit position speedily. Each board position is encrypted using a 64 bit hash-key which is found using XOR,randomly generated piece and position keys. So given a position, a unique hashkey is generated which helps to find repetitions.
 
 ### Move Representation:
 Each move is represented by a 20 bit number. Where:

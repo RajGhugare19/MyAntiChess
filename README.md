@@ -1,6 +1,6 @@
 # MAC - My Anti Chess
 
-A fast [anti-chess](https://lichess.org/team/antichess) simulator for Reinforcement learning in C.
+An [anti-chess](https://lichess.org/team/antichess) simulator for Reinforcement learning in C.
 
 ## Table of Contents
   - [Table of Contents](#table-of-contents)
